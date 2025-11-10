@@ -3,8 +3,7 @@
 
 📊 Overview
 
-An interactive Power BI Dashboard built to analyze the performance of Meta (Facebook & Instagram) advertising campaigns.
-The dashboard provides a complete funnel view — from impressions and clicks to conversions and ROI — helping marketing teams uncover performance trends, bottlenecks, and optimization opportunities.
+The Meta Ad Performance Analysis Dashboard is an interactive Power BI project built using a Kaggle-sourced dataset to evaluate ad campaign performance across Meta platforms (Facebook & Instagram). It visualizes the entire marketing funnel — from impressions and clicks to purchases and ROI — through key metrics like CTR, Engagement Rate, Conversion Rate, and ROAS. Designed using a Star Schema with advanced DAX measures, it enables marketers to analyze audience behavior by demographics, geography, time, and ad type. This project demonstrates how raw ad data can be transformed into actionable insights for optimizing campaign strategy and maximizing return on investment.
 
 
 💼 Business Problem
