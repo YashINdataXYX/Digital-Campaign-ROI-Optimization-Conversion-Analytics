@@ -14,13 +14,10 @@ Marketing teams lacked a centralized, data-driven view of campaign effectiveness
 
 Design a metrics-based performance tracking solution that allows decision-makers to:
 
--Monitor campaign reach, engagement, and conversion trends.
-
--Compare performance across Facebook and Instagram.
-
--Optimize ad spend and targeting for better ROI.
-
--Understand audience behavior across demographics, geography, and time.
+•Monitor campaign reach, engagement, and conversion trends.
+•Compare performance across Facebook and Instagram.
+•Optimize ad spend and targeting for better ROI.
+•Understand audience behavior across demographics, geography, and time.
 
 
 💥 Business Impact
