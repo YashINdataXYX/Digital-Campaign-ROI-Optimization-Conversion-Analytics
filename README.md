@@ -2,11 +2,13 @@
 
 
 📊 Overview
+
 An interactive Power BI Dashboard built to analyze the performance of Meta (Facebook & Instagram) advertising campaigns.
 The dashboard provides a complete funnel view — from impressions and clicks to conversions and ROI — helping marketing teams uncover performance trends, bottlenecks, and optimization opportunities.
 
 
 💼 Business Problem
+
 Marketing teams lacked a centralized, data-driven view of campaign effectiveness across platforms. Existing reports failed to connect awareness, engagement, and conversion metrics, leading to inefficient budget allocation and missed insights.
 
 
