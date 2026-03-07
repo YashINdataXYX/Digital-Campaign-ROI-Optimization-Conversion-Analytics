@@ -3,7 +3,7 @@
 > **A full-stack Data Analytics portfolio project** — Meta (Facebook & Instagram) ad performance dashboard built in Power BI, covering the complete marketing funnel from impressions to purchases.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Yashraj-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/yashraj33/)
-[![GitHub](https://img.shields.io/badge/GitHub-YashINdataXYZ-181717?style=flat&logo=github)](https://github.com/YashINdataXYZ)
+[![GitHub](https://img.shields.io/badge/GitHub-YashINdataXYX-181717?style=flat&logo=github)](https://github.com/YashINdataXYX)
 ![Domain](https://img.shields.io/badge/Domain-Digital%20Marketing%20Analytics-1A56DB?style=flat)
 ![Tool](https://img.shields.io/badge/Tool-Power%20BI-F2C811?style=flat&logo=powerbi)
 ![Status](https://img.shields.io/badge/Status-Completed-0E9F6E?style=flat)
@@ -158,7 +158,7 @@ The marketing team needed a centralized view of campaign performance to answer:
 ## 🤝 Connect With Me
 
 - 💼 **LinkedIn:** [linkedin.com/in/yashraj33](https://www.linkedin.com/in/yashraj33/)
-- 💻 **GitHub:** [github.com/YashINdataXYZ](https://github.com/YashINdataXYZ)
+- 💻 **GitHub:** [github.com/YashINdataXYX](https://github.com/YashINdataXYX)
 
 ---
 
