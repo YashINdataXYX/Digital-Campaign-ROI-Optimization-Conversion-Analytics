@@ -1,113 +1,165 @@
+# 📊 Digital Campaign ROI Optimization & Conversion Analytics
 
-# 🧠 Digital Campaign ROI Optimization & Conversion Analytics- Meta Ad Performance Dashboard
+> **A full-stack Data Analytics portfolio project** — Meta (Facebook & Instagram) ad performance dashboard built in Power BI, covering the complete marketing funnel from impressions to purchases.
 
-## 📊 Overview
-
-The **Meta Ad Performance Dashboard** is an interactive **Power BI project** built using a **Kaggle-sourced dataset** to evaluate ad campaign performance across **Meta platforms (Facebook & Instagram)**.
-
-It visualizes the entire **marketing funnel** — from **impressions and clicks to purchases and ROI** — through key metrics like **CTR, Engagement Rate, Conversion Rate, and ROAS**. Designed using a **Star Schema** with advanced **DAX measures**, the dashboard allows marketers to analyze audience behavior by **demographics, geography, time, and ad type**.
-
-This project demonstrates how raw advertising data can be transformed into **actionable business intelligence**, helping decision-makers **optimize campaign strategy and maximize ROI**.
-
----
-
-## 💼 Business Problem
-
-Marketing teams lacked a unified, data-driven view of campaign effectiveness across multiple Meta platforms. Existing reports failed to connect **awareness**, **engagement**, and **conversion** metrics, resulting in inefficient budget allocation and missed optimization opportunities.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yashraj-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/yashraj33/)
+[![GitHub](https://img.shields.io/badge/GitHub-YashINdataXYZ-181717?style=flat&logo=github)](https://github.com/YashINdataXYZ)
+![Domain](https://img.shields.io/badge/Domain-Digital%20Marketing%20Analytics-1A56DB?style=flat)
+![Tool](https://img.shields.io/badge/Tool-Power%20BI-F2C811?style=flat&logo=powerbi)
+![Status](https://img.shields.io/badge/Status-Completed-0E9F6E?style=flat)
 
 ---
 
-## 🎯 Goal of the Dashboard
+## 🗂️ Repository Structure
 
-To design a **metrics-based performance tracking solution** that enables decision-makers to:
-
-* Monitor campaign reach, engagement, and conversion trends.
-* Compare performance between **Facebook** and **Instagram**.
-* Optimize ad spend and targeting for higher ROI.
-* Understand audience behavior across **demographics**, **geography**, and **time**.
-
----
-
-## 💥 Business Impact
-
-* Achieved **40% faster decision-making** through unified visual reporting.
-* Identified a **0.61% conversion drop-off**, leading to targeted landing-page optimizations.
-* Enabled **budget reallocation** toward high-performing ad formats and audiences.
-* Enhanced **ROI** through data-backed targeting and scheduling strategies.
-
----
-
-## 🧩 Data Model & Source
-
-* **Data Source:** Kaggle (Meta Ads Performance Dataset)
-* **Data Model:** Star Schema with one fact table (`ad_events`) and three dimension tables (`ads`, `campaigns`, `users`)
-* **Key Metrics:** CTR, CPC, CPM, ROAS, Conversion Rate, Engagement Rate, Purchase Rate
-* **Tools Used:** Power BI, DAX, Excel, SQL
-
----
-
-## 📈 Dashboard Features
-
-* **Gender & Age Analysis:** Visualizes engagement distribution across demographic segments.
-* **Geographic Insights:** Interactive map highlighting country-wise engagement and conversions.
-* **Temporal Trends:** Tracks weekly and hourly engagement peaks to optimize ad scheduling.
-* **Calendar Heatmap:** Detects promotional spikes and seasonal performance patterns.
-* **Ad Type Performance:** Compares **Video**, **Story**, **Carousel**, and **Image** formats by CTR and Conversion Rate.
+```
+Digital-Campaign-ROI-Optimization-Conversion-Analytics/
+│
+├── 📄 README.md
+│
+├── 📁 docs/
+│   ├── 01_Project_Explanation_Interview.docx
+│   ├── 02_Domain_Knowledge_Document.docx
+│   ├── 03_Dashboard_Insights.docx
+│   └── 04_Business_Requirements_Document.docx
+│
+├── 📁 dashboard/
+│   └── Meta_Ad_Performance_Dashboard.pbix   ← Power BI file
+│
+├── 📁 data/
+│   ├── ad_events.csv
+│   ├── ads.csv
+│   ├── campaigns.csv
+│   └── users.csv
+│
+└── 📁 screenshots/
+    └── dashboard_preview.png
+```
 
 ---
 
-## 🎬 Walkthrough of Key Visuals
+## 🎯 Project Overview
 
-* **KPI Summary Cards:** Display 216K impressions, 25.4K clicks, 11.76% CTR, 5.21% conversion rate, and total budget of 2.5M.
-* **Donut & Bar Charts:** Highlight that **females (43%)** and the **18–30 age group** drive the most engagement.
-* **Geo Map:** Shows **India** and **Brazil** as high-engagement regions, with **Germany** and **UK** contributing higher-value conversions.
-* **Line & Area Charts:** Visualize hourly engagement peaks between **3 PM and 8 PM**, guiding optimal scheduling.
-* **Ad Type Matrix:** Confirms **Video** and **Story** ads as top performers in CTR and conversion rate.
+This project analyzes **Meta (Facebook & Instagram) advertising campaign performance** using a Power BI dashboard. It tracks the full marketing funnel — from ad impressions and clicks through to final purchases — and surfaces insights across demographics, geography, time, and ad formats.
 
----
-
-## 🔍 Key Insights
-
-* **CTR:** 11.76% — 6–10× higher than industry average, indicating strong creatives.
-* **Engagement Rate:** 13.56% — signifies high audience resonance.
-* **Purchase Rate:** 0.61% — indicates lower funnel inefficiency and conversion leakage.
-* **Top Audience:** Females aged 18–30 from **India & Brazil**.
-* **Best Ad Formats:** Video and Story ads outperform others.
-* **Optimal Timing:** Afternoon and evening slots deliver peak engagement.
+### Business Problem
+The marketing team needed a centralized view of campaign performance to answer:
+- Are our ads reaching the right audience?
+- Where is the funnel losing efficiency?
+- Which ad formats and platforms deliver the best ROI?
+- When and where should we concentrate ad spend?
 
 ---
 
-## 💡 Recommendations
+## 📐 Data Model — Star Schema
 
-* **Improve Conversions:** Enhance landing page UX and retarget non-converting users.
-* **Reallocate Budget:** Prioritize Video and Story formats for higher ROI.
-* **Refine Audience:** Focus on females aged 18–30 in India and Brazil.
-* **Optimize Timing:** Schedule ads between **15:00–20:00 hrs** for better engagement.
-* **Geo-Specific Strategy:** Differentiate between high-volume (India/Brazil) and high-value (Germany/UK) markets.
+```
+        ┌─────────────┐
+        │  campaigns  │ ← budget, dates, duration
+        └──────┬──────┘
+               │ campaign_id
+        ┌──────┴──────┐
+        │     ads     │ ← platform, type, targeting
+        └──────┬──────┘
+               │ ad_id
+        ┌──────┴──────┐      ┌───────┐
+        │  ad_events  │──────│ users │ ← demographics, country
+        │  (FACT)     │      └───────┘
+        └─────────────┘
+```
 
----
-
-## 🛠️ Tools & Technologies
-
-* **Power BI:** Visualization, data modeling, KPI dashboards
-* **Excel / SQL:** Data cleaning, preparation, and transformation
-* **DAX:** Custom calculations and advanced measures
-* **Supporting Skills:** Data Modeling, Advanced Excel, Process Mapping, Data Connections, Requirements Gathering
-
----
-
-## 📁 Deliverables
-
-* Business Requirements Document (BRD)
-* Domain Knowledge Document (Schema & Table Details)
-* Dashboard Insights Report
-* Project Explanation Summary
+| Table | Type | Key Fields |
+|-------|------|------------|
+| `ad_events` | Fact | event_id, ad_id, user_id, timestamp, event_type |
+| `ads` | Dimension | ad_id, campaign_id, ad_platform, ad_type, target_gender |
+| `campaigns` | Dimension | campaign_id, name, start_date, total_budget |
+| `users` | Dimension | user_id, user_gender, age_group, country, interests |
 
 ---
 
-## 🚀 Outcome
+## 📈 Key KPIs & Results
 
-A **comprehensive and interactive marketing analytics dashboard** that quantifies campaign effectiveness, identifies performance bottlenecks, and provides **data-driven insights** to improve ad strategy, conversion rates, and overall ROI.
+| KPI | Value | Benchmark | Status |
+|-----|-------|-----------|--------|
+| Impressions | 216,000 | — | ✅ Strong Reach |
+| Clicks | 25,400 | — | ✅ High Volume |
+| CTR | **11.76%** | 1–2% | 🚀 Excellent |
+| Engagement Rate | **13.56%** | ~3% | 🚀 Excellent |
+| Conversion Rate | 5.21% | 2–5% | ✅ Good |
+| Purchase Rate | 0.61% | ~1% | ⚠️ Needs Work |
+| Total Budget | 2.5M | — | — |
+| Avg. Budget / Campaign | 50.7K | — | — |
 
 ---
 
+## 💡 Key Insights
+
+### 🔺 Funnel Analysis
+- **Top of funnel is strong** — CTR of 11.76% is nearly 6× the industry average, confirming effective ad creatives and targeting.
+- **Bottom of funnel is leaking** — only 0.61% of impressions convert to purchases, indicating issues with landing page experience, audience mismatch, or offer strength.
+
+### 👥 Audience
+- Females (43%) engage more than males (22%) — campaigns should lean into female-centric messaging.
+- The **18–30 age group** drives the majority of interactions.
+
+### 🌍 Geography
+- **India & Brazil** — highest engagement volume → best for reach-focused campaigns.
+- **Germany & UK** — higher purchasing power → best for conversion-focused premium campaigns.
+
+### ⏰ Timing
+- Peak engagement: **15:00–20:00 hrs** (afternoon & evening).
+- Engagement spikes on specific calendar dates (19th–21st, 25th–27th) — likely tied to promotions.
+
+### 📹 Ad Format Performance
+| Ad Type | CTR | Conversion Rate | Engagement Rate |
+|---------|-----|-----------------|-----------------|
+| **Video** ⭐ | 11.9% | 5.2% | 13.7% |
+| Stories | 11.8% | 5.2% | 13.6% |
+| Carousel | 11.7% | 5.1% | 13.4% |
+| Image | 11.7% | 4.9% | 13.5% |
+
+---
+
+## ✅ Recommendations
+
+1. **Optimize the conversion funnel** — A/B test landing pages, improve CTAs, and deploy retargeting for non-converting engagers.
+2. **Refine targeting** — Double down on females aged 18–30 in India and Brazil.
+3. **Shift budget to Video & Stories** — They deliver the highest CTR and conversion rates.
+4. **Schedule ads** for afternoon/evening slots (15:00–20:00).
+5. **Segment geographic strategy** — Volume campaigns in India/Brazil; high-value conversion campaigns in Germany/UK.
+
+---
+
+## 📁 Project Documents
+
+| Document | Description |
+|----------|-------------|
+| [📋 Project Explanation (Interview)](./docs/01_Project_Explanation_Interview.docx) | Step-by-step guide to presenting this project in a data analyst interview |
+| [📚 Domain Knowledge Document](./docs/02_Domain_Knowledge_Document.docx) | Data architecture, table schemas, and star schema explanation |
+| [📊 Dashboard Insights](./docs/03_Dashboard_Insights.docx) | Full KPI analysis, chart breakdowns, and business insights |
+| [📝 Business Requirements Document](./docs/04_Business_Requirements_Document.docx) | Stakeholder requirements, KPI definitions, and chart specifications |
+
+---
+
+## 🛠️ Tools & Skills
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+
+- **Power BI** — Dashboard design, DAX measures, dynamic parameters
+- **Star Schema Modeling** — Fact + Dimension table architecture
+- **DAX** — CTR, Conversion Rate, Purchase Rate, ROAS calculations
+- **Marketing Analytics** — Funnel analysis, audience segmentation, ROI optimization
+
+---
+
+## 🤝 Connect With Me
+
+- 💼 **LinkedIn:** [linkedin.com/in/yashraj33](https://www.linkedin.com/in/yashraj33/)
+- 💻 **GitHub:** [github.com/YashINdataXYZ](https://github.com/YashINdataXYZ)
+
+---
+
+*Built as a portfolio project to demonstrate end-to-end data analytics skills — from business requirements through data modeling, dashboard development, and stakeholder communication.*
