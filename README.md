@@ -12,8 +12,7 @@
 ## 🗂️ Repository Structure
 
 ```
-Digital-Campaign-ROI-Optimization-Conversion-Analytics/
-│
+Meta Consumer Acquisition Funnel Analytics \& A/B Experimentation│
 ├── 📄 README.md
 │
 ├── 📁 docs/
