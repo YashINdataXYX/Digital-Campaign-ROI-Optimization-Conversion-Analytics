@@ -4,7 +4,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Yashraj-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/yashraj33/)
 [![GitHub](https://img.shields.io/badge/GitHub-YashINdataXYX-181717?style=flat&logo=github)](https://github.com/YashINdataXYX)
-![Domain](https://img.shields.io/badge/Domain-Digital%20Marketing%20Analytics-1A56DB?style=flat)
+![Domain](https://img.shields.io/badge/Domain-Product%20Analytics-1A56DB?style=flat)
 ![Tool](https://img.shields.io/badge/Tool-Power%20BI-F2C811?style=flat&logo=powerbi)
 ![Status](https://img.shields.io/badge/Status-Completed-0E9F6E?style=flat)
 
