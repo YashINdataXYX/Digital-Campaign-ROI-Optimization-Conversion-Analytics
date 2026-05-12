@@ -1,6 +1,6 @@
-# 📊 Digital Campaign ROI Optimization & Conversion Analytics
+# 📊 Meta Consumer Acquisition Funnel Analytics \& A/B Experimentation
 
-> **A full-stack Data Analytics portfolio project** — Meta (Facebook & Instagram) ad performance dashboard built in Power BI, covering the complete marketing funnel from impressions to purchases.
+> **A full-stack Product and Data Analytics portfolio project** — Meta (Facebook & Instagram) ad performance dashboard built in Power BI, covering the complete marketing funnel from impressions to purchases.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Yashraj-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/yashraj33/)
 [![GitHub](https://img.shields.io/badge/GitHub-YashINdataXYX-181717?style=flat&logo=github)](https://github.com/YashINdataXYX)
